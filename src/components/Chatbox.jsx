@@ -17,7 +17,10 @@ function Chatbox() {
     setAnswer("Loading your answer... \n It might take up to 10 seconds");
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyB4q9WLsUgVW_QQw6vTsTIL_j6f9b34Go4",
+        // url: "
+        ",
+//put your own api key
+        
         method: "post",
         data: {
           contents: [{ parts: [{ text: question }] }],
